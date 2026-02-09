@@ -3,7 +3,8 @@ config()
 
 const _config = {
     PORT: process.env.PORT,
-    DB_URL: process.env.DB_URL
+    DB_URL: process.env.MONGO_URI,
+    PRIVATE_KEY : process.env.IMAGE_KIT_PRIVATE
 }
 
 
