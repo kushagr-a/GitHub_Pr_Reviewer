@@ -77,7 +77,7 @@ export const callBackUrl = async (req, res) => {
         } else {
             console.log("User already exists");
         }
-
+ 
 
         const jwtToken = jwt.sign(
             { userId: user._id },
