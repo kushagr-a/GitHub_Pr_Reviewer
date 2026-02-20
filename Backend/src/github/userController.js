@@ -77,7 +77,7 @@ export const callBackUrl = async (req, res) => {
         } else {
             console.log("User already exists");
         }
- 
+
 
         const jwtToken = jwt.sign(
             { userId: user._id },
@@ -94,7 +94,8 @@ export const callBackUrl = async (req, res) => {
         })
 
         // optional 
-        res.redirect("https://github.com/");
+        // res.redirect("https://github.com/");
+        res.redirect(configs.FRONTEND_URL); // from here redirect to our dashboard
 
 
     } catch (err) {
